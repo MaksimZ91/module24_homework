@@ -13,7 +13,7 @@ const argv=yargs
  import  ${argv.component} from "./${argv.component}"
  function ${argv.name} (){
    return(
-     
+     <>
      <${argv.component}/>
      <> 
    )
