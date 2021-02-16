@@ -9,8 +9,7 @@ const argv=yargs
 .demandOption([`component`], 'Введите тип компонента')
 .command(['create <name> [filename]', 'cr'], 'Создание шаблона', {}, (argv)=>{
  const filepath=path.resolve(argv.filename||argv.name)
- if (argv.component)
- const content =`import  React from "react";
+  const content =`import  React from "react";
  import  ${argv.component} from "./${argv.component}"
  function ${argv.name} (){
    return(
