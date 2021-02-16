@@ -21,7 +21,7 @@ const argv=yargs
    )
  }
   export default ${argv.name}`
-  fs.writeFile(argv.filename||`${filepath}.js`,argv.component?content:defaultContent)
+  fs.writeFile(argv.filename||`${filepath}.js`,content)
  .then(()=>console.log("save"))
  .catch(()=>console.error('dont save',e))
 })
