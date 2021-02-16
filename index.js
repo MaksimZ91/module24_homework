@@ -15,7 +15,7 @@ const argv=yargs
    return(
      <>
      <${argv.component}/>
-     <> 
+     </> 
    )
  }
   export default ${argv.name}`
